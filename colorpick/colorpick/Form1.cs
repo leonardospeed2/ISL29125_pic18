@@ -19,6 +19,9 @@ namespace colorpick
             timerCOM.Enabled = true;
         }
 
+        /**
+        *funcao atualizar as coms, verifica se existe portas com no pc e lista numa combobox
+        */
         private void atualizarcom()
         {
             int i;
@@ -61,12 +64,18 @@ namespace colorpick
             cbcom.SelectedIndex = 0;
         }
 
+        /**
+        *funcao timer com, passado 1 segundo chama a funcao atualizarcom
+        */
         private void timerCOM_Tick(object sender, EventArgs e)
         {
             //chamar a funcao atualizarcom
             atualizarcom();
         }
 
+        /**
+        *funcao do botao ligar, liga a porta com escolhida da combobox
+        */
         private void btligar_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen == false)        //se a porta com estiver aberta
@@ -106,11 +115,17 @@ namespace colorpick
             }
         }
 
+        /**
+        *funcao map, converte valor 16bits em 8bits
+        */
         private long map(long x)
         {
             return x*255/65535;     //converter 16bits para 8 bits
         }
 
+        /**
+        *funcao converter hex, array bytes converte em string hexadecimal
+        */
         private string converterhex(Byte[] buff)
         {
             string hex = "";
@@ -124,6 +139,9 @@ namespace colorpick
             return hex;
         }
 
+        /**
+        *funcao botao red, envia para porta com que quer cor vermelha e recebe 2 bytes, converte e mostra
+        */
         private void btred_Click(object sender, EventArgs e)
         {
             Byte[] buff = {0,0};        //variavel para ler valores recebidos
@@ -152,6 +170,9 @@ namespace colorpick
                 
         }
 
+        /**
+        *funcao botao green, envia para porta com que quer cor verde e recebe 2 bytes, converte e mostra
+        */
         private void btgreen_Click(object sender, EventArgs e)
         {
             Byte[] buff = { 0, 0 };        //variavel para ler valores recebidos
@@ -180,6 +201,9 @@ namespace colorpick
             }
         }
 
+        /**
+        *funcao botao blue, envia para porta com que quer cor azul e recebe 2 bytes, converte e mostra
+        */
         private void btblue_Click(object sender, EventArgs e)
         {
             Byte[] buff = { 0, 0 };        //variavel para ler valores recebidos
@@ -206,6 +230,9 @@ namespace colorpick
             }
         }
 
+        /**
+        *funcao botao rgb, envia para porta com que quer RGB e recebe 6 bytes, converte e mostra
+        */
         private void btrgb_Click(object sender, EventArgs e)
         {
             Byte[] buff = { 0, 0,0,0,0,0 };          //variavel para ler valores recebidos
@@ -238,6 +265,9 @@ namespace colorpick
             }
         }
 
+        /**
+        *funcao fromclose, quando fecha a aplicacao ele fecha a porta com aberta
+        */
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (serialPort1.IsOpen == true)  // se porta aberta
