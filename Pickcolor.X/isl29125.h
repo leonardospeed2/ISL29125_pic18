@@ -4,7 +4,7 @@
  */
 
 /** 
- * biblioteca de configuração do sensor ISL29125
+ * biblioteca de configuracao do sensor ISL29125
  */
 #include <plib/i2c.h>
 
@@ -90,7 +90,7 @@
 #define BRG 49  //i2c comunicacao 100kHz
 
 /**
-* função abrir uma comunicação I2C
+* funcao abrir uma comunicaï¿½ï¿½o I2C
 *\image html OpenISL.png
 */
 void OpenISL(){
@@ -100,7 +100,7 @@ void OpenISL(){
 }
 
 /**
-* função de escrever para o sensor ISL29125
+* funcao de escrever para o sensor ISL29125
 *\image html WriteISL.png
 *\image html blockWriteISL.png
 */
@@ -118,7 +118,7 @@ void WriteISL(unsigned char address,unsigned char data){
 }
 
 /**
-* função de ler do sensor ISL29125
+* funcao de ler do sensor ISL29125
 *\image html ReadISL.png
 *\image html blockReadISL.png
 */
@@ -141,7 +141,7 @@ unsigned char ReadISL(char address){
 }
 
 /**
-* função de configurar a config_1 ISL29125
+* funcao de configurar a config_1 ISL29125
 *\image html ConfigISL1.png
 */
 void ConfigISL1(unsigned char cfg){
@@ -149,7 +149,7 @@ void ConfigISL1(unsigned char cfg){
 }
 
 /**
-* função de configurar a config_2 ISL29125
+* funcao de configurar a config_2 ISL29125
 *\image html ConfigISL2.png
 */
 void ConfigISL2(unsigned char cfg){
@@ -157,7 +157,7 @@ void ConfigISL2(unsigned char cfg){
 }
 
 /**
-* função de configurar a config_3 ISL29125
+* funcao de configurar a config_3 ISL29125
 *\image html ConfigISL3.png
 */
 void ConfigISL3(unsigned char cfg){
@@ -165,7 +165,7 @@ void ConfigISL3(unsigned char cfg){
 }
 
 /**
-* função para por a ADC do sensor ligado
+* funcao para por a ADC do sensor ligado
 *\image html StartISL.png
 */
 void StartISL(){
@@ -174,7 +174,7 @@ void StartISL(){
 }
 
 /**
-* função para por a ADC do sensor desligado
+* funcao para por a ADC do sensor desligado
 *\image html StopISL.png
 */
 void StopADCISL(){
@@ -182,7 +182,7 @@ void StopADCISL(){
 }
 
 /**
-* função para ler as bandeiras do sensor ISL29125
+* funcao para ler as bandeiras do sensor ISL29125
 *\image html StatusISL.png
 */
 char StatusISL(){
@@ -205,7 +205,7 @@ char StatusISL(){
 }
 
 /**
-* função para ler a cor vermelha do sensor ISL29125
+* funcao para ler a cor vermelha do sensor ISL29125
 *\image html ColorRED.png
 */
 void ColorRED(){
@@ -222,7 +222,7 @@ void ColorRED(){
 }
 
 /**
-* função para ler a cor verde do sensor ISL29125
+* funcao para ler a cor verde do sensor ISL29125
 *\image html ColorGREEN.png
 */
 void ColorGREEN(){
@@ -239,7 +239,7 @@ void ColorGREEN(){
 }
 
 /**
-* função para ler a cor azul do sensor ISL29125
+* funcao para ler a cor azul do sensor ISL29125
 *\image html ColorBLUE.png
 */
 void ColorBLUE(){

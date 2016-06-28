@@ -4,7 +4,7 @@
  */
 
 /** 
- * biblioteca de configurações gerais do PIC18F4580
+ * biblioteca de configuracoes gerais do PIC18F4580
  */
 
 #pragma config WDT = OFF        //desativar watchdog

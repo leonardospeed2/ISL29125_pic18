@@ -11,7 +11,7 @@
 #include "isl29125.h"
 
 /**
-*função main, recebe um byte da USART, conforme o byte recebido pode mostrar a cor
+*funcao main, recebe um byte da USART, conforme o byte recebido pode mostrar a cor
 * vermelha, verde, azul ou RGB 
 *\image html main.png
 */

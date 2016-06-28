@@ -4,14 +4,14 @@
  */
 
 /** 
- * biblioteca de configuração da USART
+ * biblioteca de configuracao da USART
  */
 #include "plib/usart.h"
 #define BAUD 10         //115200 baud rate
 
 /**
-* função de configuração de uma USART, sem interrupções, modo assincrono e
-* boud rate 115200
+* funcao de configuracao de uma USART, sem interrupï¿½ï¿½es, modo assincrono e
+* baud rate 115200
 *\image html usartconfig.png
 */
 void ConfigUsart(){
@@ -23,7 +23,7 @@ void ConfigUsart(){
 }
 
 /**
-* função de ler um caracter da USART
+* funcao de ler um caracter da USART
 *\image html getc_USART.png
 */
 char getc_USART(){
