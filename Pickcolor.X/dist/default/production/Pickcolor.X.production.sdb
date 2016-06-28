@@ -1,0 +1,557 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4580 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"24 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+"14 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 1 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+"12 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+"73 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uopen.c
+[v _OpenUSART OpenUSART `(v  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uread.c
+[v _ReadUSART ReadUSART `(uc  1 e 1 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uwrite.c
+[v _WriteUSART WriteUSART `(v  1 e 1 0 ]
+"10 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\eusart.h
+[v _ConfigUsart ConfigUsart `(v  1 e 1 0 ]
+"19
+[v _getc_USART getc_USART `(uc  1 e 1 0 ]
+"90 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\isl29125.h
+[v _OpenISL OpenISL `(v  1 e 1 0 ]
+"97
+[v _WriteISL WriteISL `(v  1 e 1 0 ]
+"111
+[v _ReadISL ReadISL `(uc  1 e 1 0 ]
+"130
+[v _ConfigISL1 ConfigISL1 `(v  1 e 1 0 ]
+"134
+[v _ConfigISL2 ConfigISL2 `(v  1 e 1 0 ]
+"138
+[v _ConfigISL3 ConfigISL3 `(v  1 e 1 0 ]
+"143
+[v _StartISL StartISL `(v  1 e 1 0 ]
+"149
+[v _StopADCISL StopADCISL `(v  1 e 1 0 ]
+"154
+[v _StatusISL StatusISL `(uc  1 e 1 0 ]
+"174
+[v _ColorRED ColorRED `(v  1 e 1 0 ]
+"188
+[v _ColorGREEN ColorGREEN `(v  1 e 1 0 ]
+"202
+[v _ColorBLUE ColorBLUE `(v  1 e 1 0 ]
+"15 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+[s S238 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"29908 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic18f4580.h
+[s S247 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S256 . 1 `S238 1 . 1 0 `S247 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES256  1 e 1 @3988 ]
+[s S98 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"30565
+[s S107 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[s S110 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+]
+[u S113 . 1 `S98 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES113  1 e 1 @3997 ]
+[s S21 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"30644
+[s S30 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[s S33 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+]
+[u S36 . 1 `S21 1 . 1 0 `S30 1 . 1 0 `S33 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES36  1 e 1 @3998 ]
+[s S56 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 PSPIP 1 0 :1:7 
+]
+"30727
+[s S65 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBIP 1 0 :1:4 
+]
+[s S68 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IP 1 0 :1:5 
+]
+[s S71 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IP 1 0 :1:4 
+]
+[u S74 . 1 `S56 1 . 1 0 `S65 1 . 1 0 `S68 1 . 1 0 `S71 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES74  1 e 1 @3999 ]
+"31529
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S456 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"31570
+[s S465 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S468 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S471 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S474 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S477 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S479 . 1 `S456 1 . 1 0 `S465 1 . 1 0 `S468 1 . 1 0 `S471 1 . 1 0 `S474 1 . 1 0 `S477 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES479  1 e 1 @4011 ]
+"31738
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S369 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"31798
+[s S378 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 BRGH1 1 0 :1:2 
+]
+[s S381 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S384 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SENDB1 1 0 :1:3 
+]
+[s S387 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SYNC1 1 0 :1:4 
+]
+[s S390 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+]
+[s S393 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX91 1 0 :1:6 
+]
+[s S396 . 1 `uc 1 TX9D1 1 0 :1:0 
+]
+[s S398 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 TXEN1 1 0 :1:5 
+]
+[s S401 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S404 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S406 . 1 `S369 1 . 1 0 `S378 1 . 1 0 `S381 1 . 1 0 `S384 1 . 1 0 `S387 1 . 1 0 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S398 1 . 1 0 `S401 1 . 1 0 `S404 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES406  1 e 1 @4012 ]
+"32035
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"32046
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"32057
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"32068
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S203 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"33050
+[u S212 . 1 `S203 1 . 1 0 ]
+"33050
+"33050
+[v _SSPCON2bits SSPCON2bits `VES212  1 e 1 @4037 ]
+"33194
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"33255
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S1050 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"33275
+[s S1056 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+"33275
+[u S1061 . 1 `S1050 1 . 1 0 `S1056 1 . 1 0 ]
+"33275
+"33275
+[v _SSPCON1bits SSPCON1bits `VES1061  1 e 1 @4038 ]
+"33324
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+"33421
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+[s S723 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"33426
+[s S726 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+"33426
+[s S729 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"33426
+"33426
+"33426
+[s S744 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+"33426
+[s S749 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+"33426
+[s S755 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+"33426
+[s S760 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+"33426
+[s S763 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+"33426
+[s S766 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+"33426
+[s S771 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+"33426
+[s S776 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+"33426
+[s S781 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+"33426
+[s S784 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+"33426
+[s S787 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+"33426
+[s S790 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+"33426
+[s S793 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+"33426
+[s S796 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+"33426
+[u S799 . 1 `S723 1 . 1 0 `S726 1 . 1 0 `S729 1 . 1 0 `S723 1 . 1 0 `S726 1 . 1 0 `S744 1 . 1 0 `S749 1 . 1 0 `S755 1 . 1 0 `S760 1 . 1 0 `S763 1 . 1 0 `S766 1 . 1 0 `S771 1 . 1 0 `S776 1 . 1 0 `S781 1 . 1 0 `S784 1 . 1 0 `S787 1 . 1 0 `S790 1 . 1 0 `S793 1 . 1 0 `S796 1 . 1 0 ]
+"33426
+"33426
+[v _SSPSTATbits SSPSTATbits `VES799  1 e 1 @4039 ]
+"33596
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S133 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"34779
+[s S142 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"34779
+[s S151 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"34779
+[u S155 . 1 `S133 1 . 1 0 `S142 1 . 1 0 `S151 1 . 1 0 ]
+"34779
+"34779
+[v _INTCONbits INTCONbits `VES155  1 e 1 @4082 ]
+[s S603 . 1 `uc 1 RX_NINE 1 0 :1:0 
+`uc 1 TX_NINE 1 0 :1:1 
+`uc 1 FRAME_ERROR 1 0 :1:2 
+`uc 1 OVERRUN_ERROR 1 0 :1:3 
+`uc 1 fill 1 0 :4:4 
+]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\udefs.c
+[u S609 USART 1 `uc 1 val 1 0 `S603 1 . 1 0 ]
+[v _USART_Status USART_Status `S609  1 e 1 0 ]
+"15 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"16
+[v main@rx rx `uc  1 a 1 6 ]
+"48
+} 0
+"19 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\eusart.h
+[v _getc_USART getc_USART `(uc  1 e 1 0 ]
+{
+"22
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uread.c
+[v _ReadUSART ReadUSART `(uc  1 e 1 0 ]
+{
+"17
+[v ReadUSART@data data `uc  1 a 1 0 ]
+"37
+} 0
+"143 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\isl29125.h
+[v _StartISL StartISL `(v  1 e 1 0 ]
+{
+"146
+} 0
+"134
+[v _ConfigISL2 ConfigISL2 `(v  1 e 1 0 ]
+{
+[v ConfigISL2@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL2@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL2@cfg cfg `uc  1 a 1 4 ]
+"136
+} 0
+"90
+[v _OpenISL OpenISL `(v  1 e 1 0 ]
+{
+"94
+} 0
+"14 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 1 0 ]
+{
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@slew slew `uc  1 p 1 0 ]
+"16
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 1 ]
+"26
+} 0
+"10 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\eusart.h
+[v _ConfigUsart ConfigUsart `(v  1 e 1 0 ]
+{
+"16
+} 0
+"73 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uopen.c
+[v _OpenUSART OpenUSART `(v  1 e 1 0 ]
+{
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@spbrg spbrg `ui  1 p 2 0 ]
+"75
+[v OpenUSART@config config `uc  1 a 1 2 ]
+"143
+} 0
+"174 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\isl29125.h
+[v _ColorRED ColorRED `(v  1 e 1 0 ]
+{
+"175
+[v ColorRED@a a `uc  1 a 1 5 ]
+"185
+} 0
+"188
+[v _ColorGREEN ColorGREEN `(v  1 e 1 0 ]
+{
+"189
+[v ColorGREEN@a a `uc  1 a 1 5 ]
+"199
+} 0
+"202
+[v _ColorBLUE ColorBLUE `(v  1 e 1 0 ]
+{
+"203
+[v ColorBLUE@a a `uc  1 a 1 5 ]
+"213
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\USART\uwrite.c
+[v _WriteUSART WriteUSART `(v  1 e 1 0 ]
+{
+[v WriteUSART@data data `uc  1 a 1 wreg ]
+[v WriteUSART@data data `uc  1 a 1 wreg ]
+"15
+[v WriteUSART@data data `uc  1 a 1 0 ]
+"23
+} 0
+"149 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\isl29125.h
+[v _StopADCISL StopADCISL `(v  1 e 1 0 ]
+{
+"151
+} 0
+"130
+[v _ConfigISL1 ConfigISL1 `(v  1 e 1 0 ]
+{
+[v ConfigISL1@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL1@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL1@cfg cfg `uc  1 a 1 4 ]
+"132
+} 0
+"154
+[v _StatusISL StatusISL `(uc  1 e 1 0 ]
+{
+"155
+[v StatusISL@r r `uc  1 a 1 4 ]
+"171
+} 0
+"111
+[v _ReadISL ReadISL `(uc  1 e 1 0 ]
+{
+[v ReadISL@address address `uc  1 a 1 wreg ]
+"112
+[v ReadISL@data data `uc  1 a 1 3 ]
+"111
+[v ReadISL@address address `uc  1 a 1 wreg ]
+"113
+[v ReadISL@address address `uc  1 a 1 2 ]
+"127
+} 0
+"11 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+{
+"17
+} 0
+"138 C:\Users\Leonardo\Desktop\projeto\Pickcolor.X\isl29125.h
+[v _ConfigISL3 ConfigISL3 `(v  1 e 1 0 ]
+{
+[v ConfigISL3@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL3@cfg cfg `uc  1 a 1 wreg ]
+[v ConfigISL3@cfg cfg `uc  1 a 1 4 ]
+"140
+} 0
+"97
+[v _WriteISL WriteISL `(v  1 e 1 0 ]
+{
+[v WriteISL@address address `uc  1 a 1 wreg ]
+[v WriteISL@address address `uc  1 a 1 wreg ]
+[v WriteISL@data data `uc  1 p 1 2 ]
+[v WriteISL@address address `uc  1 a 1 3 ]
+"108
+} 0
+"12 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+{
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"14
+[v WriteI2C@data_out data_out `uc  1 a 1 1 ]
+"43
+} 0
+"24 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic18\plib\i2c\i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 1 0 ]
+{
+"28
+} 0

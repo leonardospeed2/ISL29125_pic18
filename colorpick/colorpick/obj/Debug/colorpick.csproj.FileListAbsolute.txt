@@ -1,0 +1,18 @@
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\bin\Debug\colorpick.exe.config
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.Form1.resources
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.Properties.Resources.resources
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.csproj.GenerateResource.Cache
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\bin\Debug\colorpick.exe
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\bin\Debug\colorpick.pdb
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.exe
+c:\users\leonardo\documents\visual studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.pdb
+C:\Users\Leonardo\Documents\Visual Studio 2015\Projects\colorpick\colorpick\obj\Debug\colorpick.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\bin\Debug\colorpick.exe.config
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.exe
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.pdb
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\bin\Debug\colorpick.exe
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\bin\Debug\colorpick.pdb
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.Form1.resources
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.Properties.Resources.resources
+C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.csproj.GenerateResource.Cache
