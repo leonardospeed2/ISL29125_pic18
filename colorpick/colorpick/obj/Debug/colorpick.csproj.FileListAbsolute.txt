@@ -16,3 +16,12 @@ C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.csproj
 C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.Form1.resources
 C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.Properties.Resources.resources
 C:\Users\Leonardo\Desktop\projeto\colorpick\colorpick\obj\Debug\colorpick.csproj.GenerateResource.Cache
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\bin\Debug\colorpick.exe.config
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.exe
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.pdb
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.Form1.resources
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.Properties.Resources.resources
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\obj\Debug\colorpick.csproj.GenerateResource.Cache
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\bin\Debug\colorpick.exe
+C:\Users\Leonardo\Documents\GitHub\ISL29125_pic18\colorpick\colorpick\bin\Debug\colorpick.pdb

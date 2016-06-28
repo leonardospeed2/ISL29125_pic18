@@ -120,7 +120,7 @@
             // lbred
             // 
             this.lbred.AutoSize = true;
-            this.lbred.Location = new System.Drawing.Point(283, 15);
+            this.lbred.Location = new System.Drawing.Point(355, 15);
             this.lbred.Name = "lbred";
             this.lbred.Size = new System.Drawing.Size(13, 13);
             this.lbred.TabIndex = 7;
@@ -129,7 +129,7 @@
             // lbgreen
             // 
             this.lbgreen.AutoSize = true;
-            this.lbgreen.Location = new System.Drawing.Point(283, 51);
+            this.lbgreen.Location = new System.Drawing.Point(355, 51);
             this.lbgreen.Name = "lbgreen";
             this.lbgreen.Size = new System.Drawing.Size(13, 13);
             this.lbgreen.TabIndex = 8;
@@ -138,7 +138,7 @@
             // lbblue
             // 
             this.lbblue.AutoSize = true;
-            this.lbblue.Location = new System.Drawing.Point(283, 89);
+            this.lbblue.Location = new System.Drawing.Point(355, 89);
             this.lbblue.Name = "lbblue";
             this.lbblue.Size = new System.Drawing.Size(13, 13);
             this.lbblue.TabIndex = 9;
@@ -155,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(244, 15);
+            this.label1.Location = new System.Drawing.Point(294, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 11;
@@ -164,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 51);
+            this.label2.Location = new System.Drawing.Point(279, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 12;
@@ -173,7 +173,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(239, 89);
+            this.label3.Location = new System.Drawing.Point(289, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 13;
@@ -219,7 +219,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Color Pick";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
