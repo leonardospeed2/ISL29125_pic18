@@ -64,8 +64,9 @@ namespace colorpick
             cbcom.SelectedIndex = 0;
         }
 
+
         /**
-        *funcao timer com, passado 1 segundo chama a funcao atualizarcom
+        * funcao timer com, passado 1 segundo chama a funcao atualizarcom
         */
         private void timerCOM_Tick(object sender, EventArgs e)
         {
