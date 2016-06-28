@@ -1,11 +1,8 @@
-/** 
- * File:    config.h
- * Author:  Leonardo & Vitor
- */
-
-/** 
- * biblioteca de configuracoes gerais do PIC18F4580
- */
+/**
+*\file config.h
+* \author  Leonardo & Vitor
+* biblioteca de configuracoes gerais do PIC18F4580
+*/
 
 #pragma config WDT = OFF        //desativar watchdog
 #pragma config OSC = RCIO       //oscilador externo

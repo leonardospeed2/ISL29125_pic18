@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_82501b4c47ae862ce788d689ae5c1a2d" kind="dir">
+    <compoundname>colorpick/colorpick</compoundname>
+    <innerfile refid="_form1_8cs">Form1.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="colorpick/colorpick/"/>
+  </compounddef>
+</doxygen>

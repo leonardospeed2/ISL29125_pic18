@@ -1,0 +1,664 @@
+.TH "Pickcolor.X/isl29125.h" 3 "Terça, 28 de Junho de 2016" "Version 1.0" "Mini Projeto ISL29125" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pickcolor.X/isl29125.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <plib/i2c\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEVICE_ID\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCONFIG_1\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCONFIG_2\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCONFIG_3\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBTHRESHOLD_LL\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBTHRESHOLD_LH\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBTHRESHOLD_HL\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBTHRESHOLD_HH\fP   0x07"
+.br
+.ti -1c
+.RI "#define \fBSTATUS\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBGREEN_L\fP   0x09"
+.br
+.ti -1c
+.RI "#define \fBGREEN_H\fP   0x0A"
+.br
+.ti -1c
+.RI "#define \fBRED_L\fP   0x0B"
+.br
+.ti -1c
+.RI "#define \fBRED_H\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBBLUE_L\fP   0x0D"
+.br
+.ti -1c
+.RI "#define \fBBLUE_H\fP   0x0E"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_POWERDOWN\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_G\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_R\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_B\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_STANDBY\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_RGB\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_RG\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBCFG1_MODE_GB\fP   0x07"
+.br
+.ti -1c
+.RI "#define \fBCFG1_375LUX\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG1_10KLUX\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCFG1_16BIT\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG1_12BIT\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBCFG1_ADC_SYNC_NORMAL\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG1_ADC_SYNC_TO_INT\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBCFG2_IR_OFFSET_OFF\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG2_IR_OFFSET_ON\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBCFG2_IR_ADJUST_LOW\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG2_IR_ADJUST_MID\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBCFG2_IR_ADJUST_HIGH\fP   0x3F"
+.br
+.ti -1c
+.RI "#define \fBCFG3_NO_INT\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG3_G_INT\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCFG3_R_INT\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCFG3_B_INT\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBCFG3_INT_PRST1\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG3_INT_PRST2\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCFG3_INT_PRST4\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCFG3_INT_PRST8\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBCFG3_RGB_CONV_TO_INT_DISABLE\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCFG3_RGB_CONV_TO_INT_ENABLE\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBFLAG_INT\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBFLAG_CONV_DONE\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBFLAG_BROWNOUT\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBFLAG_CONV_G\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBFLAG_CONV_R\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBFLAG_CONV_B\fP   0x30"
+.br
+.ti -1c
+.RI "#define \fBCFG_DEFAUT\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBREADISL\fP   0x89"
+.br
+.ti -1c
+.RI "#define \fBWRITEISL\fP   0x88"
+.br
+.ti -1c
+.RI "#define \fBBRG\fP   49"
+.br
+.in -1c
+.SS "Funções"
+
+.in +1c
+.ti -1c
+.RI "void \fBOpenISL\fP ()"
+.br
+.ti -1c
+.RI "void \fBWriteISL\fP (unsigned char address, unsigned char data)"
+.br
+.ti -1c
+.RI "unsigned char \fBReadISL\fP (char address)"
+.br
+.ti -1c
+.RI "void \fBConfigISL1\fP (unsigned char cfg)"
+.br
+.ti -1c
+.RI "void \fBConfigISL2\fP (unsigned char cfg)"
+.br
+.ti -1c
+.RI "void \fBConfigISL3\fP (unsigned char cfg)"
+.br
+.ti -1c
+.RI "void \fBStartISL\fP ()"
+.br
+.ti -1c
+.RI "void \fBStopADCISL\fP ()"
+.br
+.ti -1c
+.RI "char \fBStatusISL\fP ()"
+.br
+.ti -1c
+.RI "void \fBColorRED\fP ()"
+.br
+.ti -1c
+.RI "void \fBColorGREEN\fP ()"
+.br
+.ti -1c
+.RI "void \fBColorBLUE\fP ()"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+
+.PP
+\fBAutor:\fP
+.RS 4
+Leonardo & Vitor biblioteca de configuracao do sensor ISL29125 
+.RE
+.PP
+
+.PP
+Definido no ficheiro \fBisl29125\&.h\fP\&.
+.SH "Documentação das macros"
+.PP 
+.SS "#define BLUE_H   0x0E"
+
+.PP
+Definido na linha 23 do ficheiro isl29125\&.h\&.
+.SS "#define BLUE_L   0x0D"
+
+.PP
+Definido na linha 22 do ficheiro isl29125\&.h\&.
+.SS "#define BRG   49"
+
+.PP
+Definido na linha 87 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_10KLUX   0x08"
+
+.PP
+Definido na linha 38 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_12BIT   0x10"
+
+.PP
+Definido na linha 42 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_16BIT   0x00"
+
+.PP
+Definido na linha 41 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_375LUX   0x00"
+
+.PP
+Definido na linha 37 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_ADC_SYNC_NORMAL   0x00"
+
+.PP
+Definido na linha 45 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_ADC_SYNC_TO_INT   0x20"
+
+.PP
+Definido na linha 46 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_B   0x03"
+
+.PP
+Definido na linha 30 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_G   0x01"
+
+.PP
+Definido na linha 28 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_GB   0x07"
+
+.PP
+Definido na linha 34 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_POWERDOWN   0x00"
+
+.PP
+Definido na linha 27 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_R   0x02"
+
+.PP
+Definido na linha 29 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_RG   0x06"
+
+.PP
+Definido na linha 33 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_RGB   0x05"
+
+.PP
+Definido na linha 32 do ficheiro isl29125\&.h\&.
+.SS "#define CFG1_MODE_STANDBY   0x04"
+
+.PP
+Definido na linha 31 do ficheiro isl29125\&.h\&.
+.SS "#define CFG2_IR_ADJUST_HIGH   0x3F"
+
+.PP
+Definido na linha 56 do ficheiro isl29125\&.h\&.
+.SS "#define CFG2_IR_ADJUST_LOW   0x00"
+
+.PP
+Definido na linha 54 do ficheiro isl29125\&.h\&.
+.SS "#define CFG2_IR_ADJUST_MID   0x20"
+
+.PP
+Definido na linha 55 do ficheiro isl29125\&.h\&.
+.SS "#define CFG2_IR_OFFSET_OFF   0x00"
+
+.PP
+Definido na linha 50 do ficheiro isl29125\&.h\&.
+.SS "#define CFG2_IR_OFFSET_ON   0x80"
+
+.PP
+Definido na linha 51 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_B_INT   0x03"
+
+.PP
+Definido na linha 63 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_G_INT   0x01"
+
+.PP
+Definido na linha 61 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_INT_PRST1   0x00"
+
+.PP
+Definido na linha 66 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_INT_PRST2   0x04"
+
+.PP
+Definido na linha 67 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_INT_PRST4   0x08"
+
+.PP
+Definido na linha 68 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_INT_PRST8   0x0C"
+
+.PP
+Definido na linha 69 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_NO_INT   0x00"
+
+.PP
+Definido na linha 60 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_R_INT   0x02"
+
+.PP
+Definido na linha 62 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_RGB_CONV_TO_INT_DISABLE   0x00"
+
+.PP
+Definido na linha 72 do ficheiro isl29125\&.h\&.
+.SS "#define CFG3_RGB_CONV_TO_INT_ENABLE   0x10"
+
+.PP
+Definido na linha 73 do ficheiro isl29125\&.h\&.
+.SS "#define CFG_DEFAUT   0x00"
+
+.PP
+Definido na linha 84 do ficheiro isl29125\&.h\&.
+.SS "#define CONFIG_1   0x01"
+
+.PP
+Definido na linha 10 do ficheiro isl29125\&.h\&.
+.SS "#define CONFIG_2   0x02"
+
+.PP
+Definido na linha 11 do ficheiro isl29125\&.h\&.
+.SS "#define CONFIG_3   0x03"
+
+.PP
+Definido na linha 12 do ficheiro isl29125\&.h\&.
+.SS "#define DEVICE_ID   0x00"
+
+.PP
+Definido na linha 9 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_BROWNOUT   0x04"
+
+.PP
+Definido na linha 78 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_CONV_B   0x30"
+
+.PP
+Definido na linha 81 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_CONV_DONE   0x02"
+
+.PP
+Definido na linha 77 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_CONV_G   0x10"
+
+.PP
+Definido na linha 79 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_CONV_R   0x20"
+
+.PP
+Definido na linha 80 do ficheiro isl29125\&.h\&.
+.SS "#define FLAG_INT   0x01"
+
+.PP
+Definido na linha 76 do ficheiro isl29125\&.h\&.
+.SS "#define GREEN_H   0x0A"
+
+.PP
+Definido na linha 19 do ficheiro isl29125\&.h\&.
+.SS "#define GREEN_L   0x09"
+
+.PP
+Definido na linha 18 do ficheiro isl29125\&.h\&.
+.SS "#define READISL   0x89"
+
+.PP
+Definido na linha 85 do ficheiro isl29125\&.h\&.
+.SS "#define RED_H   0x0C"
+
+.PP
+Definido na linha 21 do ficheiro isl29125\&.h\&.
+.SS "#define RED_L   0x0B"
+
+.PP
+Definido na linha 20 do ficheiro isl29125\&.h\&.
+.SS "#define STATUS   0x08"
+
+.PP
+Definido na linha 17 do ficheiro isl29125\&.h\&.
+.SS "#define THRESHOLD_HH   0x07"
+
+.PP
+Definido na linha 16 do ficheiro isl29125\&.h\&.
+.SS "#define THRESHOLD_HL   0x06"
+
+.PP
+Definido na linha 15 do ficheiro isl29125\&.h\&.
+.SS "#define THRESHOLD_LH   0x05"
+
+.PP
+Definido na linha 14 do ficheiro isl29125\&.h\&.
+.SS "#define THRESHOLD_LL   0x04"
+
+.PP
+Definido na linha 13 do ficheiro isl29125\&.h\&.
+.SS "#define WRITEISL   0x88"
+
+.PP
+Definido na linha 86 do ficheiro isl29125\&.h\&.
+.SH "Documentação das funções"
+.PP 
+.SS "void ColorBLUE ()"
+funcao para ler a cor azul do sensor ISL29125  
+.PP
+Definido na linha 237 do ficheiro isl29125\&.h\&.
+.PP
+Referências BLUE_H, BLUE_L, CFG1_10KLUX, CFG1_16BIT, CFG1_ADC_SYNC_NORMAL, CFG1_MODE_B, CFG3_B_INT, CFG3_INT_PRST8, CFG3_RGB_CONV_TO_INT_DISABLE, ConfigISL1(), ConfigISL3(), ReadISL(), StatusISL() e StopADCISL()\&.
+.PP
+.nf
+237                 {
+238     char a=0;       //variavel onde vai guardar byte vindo isl
+239     //configurar uma interrupcao na cor azul
+240     ConfigISL1(CFG1_MODE_B | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
+241     ConfigISL3(CFG3_B_INT | CFG3_INT_PRST8 | CFG3_RGB_CONV_TO_INT_DISABLE);
+242     while(StatusISL() != 6);        //esperar que esteja convertido
+243     StopADCISL();                   //Parar a adc do isl
+244     a = ReadISL(BLUE_L);            //ler byte menos significativo
+245     putcUSART(a);                   //Imprimir para USART
+246     a = ReadISL(BLUE_H);            //ler byte mais significativo
+247     putcUSART(a);                   //Imprimir para USART
+248 }
+.fi
+.SS "void ColorGREEN ()"
+funcao para ler a cor verde do sensor ISL29125  
+.PP
+Definido na linha 220 do ficheiro isl29125\&.h\&.
+.PP
+Referências CFG1_10KLUX, CFG1_16BIT, CFG1_ADC_SYNC_NORMAL, CFG1_MODE_G, CFG3_G_INT, CFG3_INT_PRST8, CFG3_RGB_CONV_TO_INT_DISABLE, ConfigISL1(), ConfigISL3(), GREEN_H, GREEN_L, ReadISL(), StatusISL() e StopADCISL()\&.
+.PP
+.nf
+220                  {
+221     char a= 0;      //variavel onde vai guardar byte vindo isl
+222     //configurar uma interrupcao na cor verde
+223     ConfigISL1(CFG1_MODE_G | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
+224     ConfigISL3(CFG3_G_INT | CFG3_INT_PRST8 | CFG3_RGB_CONV_TO_INT_DISABLE);
+225     while(StatusISL() != 6);        //esperar que esteja convertido
+226     StopADCISL();                   //Parar a adc do isl
+227     a = ReadISL(GREEN_L);           //ler byte menos significativo
+228     putcUSART(a);                   //Imprimir para USART
+229     a = ReadISL(GREEN_H);           //ler byte mais significativo
+230     putcUSART(a);                   //Imprimir para USART
+231 }
+.fi
+.SS "void ColorRED ()"
+funcao para ler a cor vermelha do sensor ISL29125  
+.PP
+Definido na linha 203 do ficheiro isl29125\&.h\&.
+.PP
+Referências CFG1_10KLUX, CFG1_16BIT, CFG1_ADC_SYNC_NORMAL, CFG1_MODE_R, CFG3_INT_PRST8, CFG3_R_INT, CFG3_RGB_CONV_TO_INT_DISABLE, ConfigISL1(), ConfigISL3(), ReadISL(), RED_H, RED_L, StatusISL() e StopADCISL()\&.
+.PP
+.nf
+203                {
+204     char a=0;       //variavel onde vai guardar byte vindo isl
+205     //configurar uma interrupcao na cor vermelha
+206     ConfigISL1(CFG1_MODE_R | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
+207     ConfigISL3(CFG3_R_INT | CFG3_INT_PRST8 | CFG3_RGB_CONV_TO_INT_DISABLE);
+208     while(StatusISL() != 6);        //esperar que esteja convertido
+209     StopADCISL();                   //Parar a adc do isl
+210     a = ReadISL(RED_L);             //ler byte menos significativo
+211     putcUSART(a);                   //Imprimir para USART
+212     a = ReadISL(RED_H);             //ler byte mais significativo
+213     putcUSART(a);                   //Imprimir para USART
+214 }
+.fi
+.SS "void ConfigISL1 (unsigned char cfg)"
+funcao de configurar a config_1 ISL29125 
+.PP
+Definido na linha 143 do ficheiro isl29125\&.h\&.
+.PP
+Referências CONFIG_1 e WriteISL()\&.
+.PP
+.nf
+143                                   {
+144     WriteISL(CONFIG_1,cfg);         //configuracao 1
+145 }
+.fi
+.SS "void ConfigISL2 (unsigned char cfg)"
+funcao de configurar a config_2 ISL29125 
+.PP
+Definido na linha 150 do ficheiro isl29125\&.h\&.
+.PP
+Referências CONFIG_2 e WriteISL()\&.
+.PP
+.nf
+150                                   {
+151     WriteISL(CONFIG_2,cfg);        //configuracao 2
+152 }
+.fi
+.SS "void ConfigISL3 (unsigned char cfg)"
+funcao de configurar a config_3 ISL29125 
+.PP
+Definido na linha 157 do ficheiro isl29125\&.h\&.
+.PP
+Referências CONFIG_3 e WriteISL()\&.
+.PP
+.nf
+157                                   {
+158     WriteISL(CONFIG_3,cfg);        //configuracao 3
+159 }
+.fi
+.SS "void OpenISL ()"
+funcao abrir uma comunicacao I2C  
+.PP
+Definido na linha 93 do ficheiro isl29125\&.h\&.
+.PP
+Referências BRG\&.
+.PP
+.nf
+93               {
+94     SSPADD = BRG;                   //100kHz
+95     OpenI2C(MASTER, SLEW_OFF);      //PIC como master frequencia baixa 100kHz
+96     IdleI2C();                      //esperar bus esteja livre
+97 }
+.fi
+.SS "unsigned char ReadISL (char address)"
+funcao de ler do sensor ISL29125   
+.PP
+Definido na linha 122 do ficheiro isl29125\&.h\&.
+.PP
+Referências READISL e WRITEISL\&.
+.PP
+.nf
+122                                    {
+123     char data;                      //variavel onde vai guardar byte vindo isl
+124     IdleI2C();                      //esperar bus esteja livre
+125     StartI2C();                     //enviar Start transmissao
+126     while(SSPCON2bits\&.SEN);         //esperar que condicao start acaba
+127     WriteI2C(WRITEISL);             //enviar 7 bits referentes ISL e 8 bit de escrita
+128     IdleI2C();                      //esperar bus esteja livre
+129     WriteI2C(address);              //enviar endereco
+130     IdleI2C();                      //esperar bus esteja livre
+131     RestartI2C();                   //enviar restart transmissao
+132     while(SSPCON2bits\&.RSEN);        //esperar que condicao restart acaba
+133     WriteI2C(READISL);              //enviar 7 bits referentes ISL e 8 bit de leitura
+134     IdleI2C();                      //esperar bus esteja livre
+135     data = getcI2C();               //receber byte do ISL
+136     StopI2C();                      //Parar a transmissao
+137     return data;                    //retorno data
+138 }
+.fi
+.SS "void StartISL ()"
+funcao para por a ADC do sensor ligado 
+.PP
+Definido na linha 164 do ficheiro isl29125\&.h\&.
+.PP
+Referências CFG1_10KLUX, CFG1_16BIT, CFG1_ADC_SYNC_NORMAL, CFG1_MODE_STANDBY, CFG2_IR_ADJUST_HIGH, CFG2_IR_OFFSET_ON, ConfigISL1() e ConfigISL2()\&.
+.PP
+.nf
+164                {
+165     ConfigISL1(CFG1_MODE_STANDBY | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
+166     ConfigISL2(CFG2_IR_OFFSET_ON | CFG2_IR_ADJUST_HIGH | 0x00);
+167 }
+.fi
+.SS "char StatusISL ()"
+funcao para ler as bandeiras do sensor ISL29125  
+.PP
+Definido na linha 180 do ficheiro isl29125\&.h\&.
+.PP
+Referências FLAG_BROWNOUT, FLAG_CONV_B, FLAG_CONV_DONE, FLAG_CONV_G, FLAG_CONV_R, FLAG_INT, ReadISL() e STATUS\&.
+.PP
+.nf
+180                 {
+181     char r;                         //variavel onde vai ter flag ISL
+182     r = ReadISL(STATUS);            //ler do ISL a flag
+183     if(r == FLAG_CONV_DONE)         //se r == conversao feita
+184         return 0;                   //retorno 0
+185     if(r == FLAG_BROWNOUT)          //se r == overflow adc
+186         return 1;                   //retorno 1
+187     if(r == FLAG_CONV_G)            //se r == conversao verde
+188         return 2;                   //retorno 2
+189     if(r == FLAG_CONV_R)            //se r == conversao vermelha
+190         return 3;                   //retorno 3
+191     if(r == FLAG_CONV_B)            //se r == conversao azul
+192         return 4;                   //retorno 4
+193     if(r == FLAG_INT)               //se r == interrupcao
+194         return 5;                   //retorno 5
+195     else                            //adc parada
+196         return 6;                   //retorno 6
+197 }
+.fi
+.SS "void StopADCISL ()"
+funcao para por a ADC do sensor desligado 
+.PP
+Definido na linha 172 do ficheiro isl29125\&.h\&.
+.PP
+Referências CFG1_10KLUX, CFG1_16BIT, CFG1_ADC_SYNC_NORMAL, CFG1_MODE_POWERDOWN e ConfigISL1()\&.
+.PP
+.nf
+172                  {
+173     ConfigISL1(CFG1_MODE_POWERDOWN | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
+174 }
+.fi
+.SS "void WriteISL (unsigned char address, unsigned char data)"
+funcao de escrever para o sensor ISL29125   
+.PP
+Definido na linha 104 do ficheiro isl29125\&.h\&.
+.PP
+Referências WRITEISL\&.
+.PP
+.nf
+104                                                        {
+105     IdleI2C();                      //esperar bus esteja livre
+106     StartI2C();                     //enviar Start transmissao
+107     while(SSPCON2bits\&.SEN);         //esperar que condicao start acaba
+108     WriteI2C(WRITEISL);             //enviar 7 bits referentes ISL e 8 bit de escrita
+109     IdleI2C();                      //esperar bus esteja livre
+110     WriteI2C(address);              //enviar endereco
+111     IdleI2C();                      //esperar bus esteja livre
+112     WriteI2C(data);                 //enviar dados
+113     IdleI2C();                      //esperar bus esteja livre
+114     StopI2C();                      //Parar a transmissao
+115 }
+.fi
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Mini Projeto ISL29125 a partir do código fonte\&.

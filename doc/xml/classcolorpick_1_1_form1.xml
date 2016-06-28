@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classcolorpick_1_1_form1" kind="class" language="C#" prot="public">
+    <compoundname>colorpick::Form1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1aaf2c710a9365b89a8dd6cccf4a364c9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>colorpick.Form1.Form1</definition>
+        <argsstring>()</argsstring>
+        <name>Form1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="16" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1aedc191b1bcfb3e1a7a2cab95ceca9c90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.atualizarcom</definition>
+        <argsstring>()</argsstring>
+        <name>atualizarcom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao atualizar as coms, verifica se existe portas com no pc e lista numa combobox </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="25" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="25" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1a39ac5be1e3bb6431cc184413761e9e46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.timerCOM_Tick</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>timerCOM_Tick</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao timer com, passado 1 segundo chama a funcao atualizarcom </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="71" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="71" bodyend="75"/>
+        <references refid="classcolorpick_1_1_form1_1aedc191b1bcfb3e1a7a2cab95ceca9c90" compoundref="_form1_8cs" startline="25" endline="65">colorpick.Form1.atualizarcom</references>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1ae7cb3197a82fa9416cd56006dc12c5be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.btligar_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btligar_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao do botao ligar, liga a porta com escolhida da combobox </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="80" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="80" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long colorpick.Form1.map</definition>
+        <argsstring>(long x)</argsstring>
+        <name>map</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao map, converte valor 16bits em 8bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="122" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string colorpick.Form1.converterhex</definition>
+        <argsstring>(Byte[] buff)</argsstring>
+        <name>converterhex</name>
+        <param>
+          <type>Byte[]</type>
+          <declname>buff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao converter hex, array bytes converte em string hexadecimal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="130" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="130" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1a5af9c6089df459668dbe6185c90f1541" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.btred_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btred_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao botao red, envia para porta com que quer cor vermelha e recebe 2 bytes, converte e mostra </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="146" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="146" bodyend="172"/>
+        <references refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" compoundref="_form1_8cs" startline="130" endline="141">colorpick.Form1.converterhex</references>
+        <references refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" compoundref="_form1_8cs" startline="122" endline="125">colorpick.Form1.map</references>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1af9d782feaec370cbffd3054078f68266" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.btgreen_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btgreen_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao botao green, envia para porta com que quer cor verde e recebe 2 bytes, converte e mostra </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="177" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="177" bodyend="203"/>
+        <references refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" compoundref="_form1_8cs" startline="130" endline="141">colorpick.Form1.converterhex</references>
+        <references refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" compoundref="_form1_8cs" startline="122" endline="125">colorpick.Form1.map</references>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1a79e5401015896f629f1415696e645b84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.btblue_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btblue_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao botao blue, envia para porta com que quer cor azul e recebe 2 bytes, converte e mostra </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="208" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="208" bodyend="232"/>
+        <references refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" compoundref="_form1_8cs" startline="130" endline="141">colorpick.Form1.converterhex</references>
+        <references refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" compoundref="_form1_8cs" startline="122" endline="125">colorpick.Form1.map</references>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1a044280d621f79660d80b7e4b47b9d8d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.btrgb_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btrgb_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao botao rgb, envia para porta com que quer RGB e recebe 6 bytes, converte e mostra </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="237" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="237" bodyend="267"/>
+        <references refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" compoundref="_form1_8cs" startline="130" endline="141">colorpick.Form1.converterhex</references>
+        <references refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" compoundref="_form1_8cs" startline="122" endline="125">colorpick.Form1.map</references>
+      </memberdef>
+      <memberdef kind="function" id="classcolorpick_1_1_form1_1a63a9dfeca769ba731c11a660233a8f11" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void colorpick.Form1.Form1_FormClosed</definition>
+        <argsstring>(object sender, FormClosedEventArgs e)</argsstring>
+        <name>Form1_FormClosed</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>FormClosedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao fromclose, quando fecha a aplicacao ele fecha a porta com aberta </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="colorpick/colorpick/Form1.cs" line="272" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="272" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Form</label>
+      </node>
+      <node id="0">
+        <label>colorpick.Form1</label>
+        <link refid="classcolorpick_1_1_form1"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Form</label>
+      </node>
+      <node id="2">
+        <label>colorpick.Form1</label>
+        <link refid="classcolorpick_1_1_form1"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="colorpick/colorpick/Form1.cs" line="15" column="1" bodyfile="colorpick/colorpick/Form1.cs" bodystart="14" bodyend="278"/>
+    <listofallmembers>
+      <member refid="classcolorpick_1_1_form1_1aedc191b1bcfb3e1a7a2cab95ceca9c90" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>atualizarcom</name></member>
+      <member refid="classcolorpick_1_1_form1_1a79e5401015896f629f1415696e645b84" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>btblue_Click</name></member>
+      <member refid="classcolorpick_1_1_form1_1af9d782feaec370cbffd3054078f68266" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>btgreen_Click</name></member>
+      <member refid="classcolorpick_1_1_form1_1ae7cb3197a82fa9416cd56006dc12c5be" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>btligar_Click</name></member>
+      <member refid="classcolorpick_1_1_form1_1a5af9c6089df459668dbe6185c90f1541" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>btred_Click</name></member>
+      <member refid="classcolorpick_1_1_form1_1a044280d621f79660d80b7e4b47b9d8d6" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>btrgb_Click</name></member>
+      <member refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>converterhex</name></member>
+      <member refid="classcolorpick_1_1_form1_1aaf2c710a9365b89a8dd6cccf4a364c9e" prot="public" virt="non-virtual"><scope>colorpick::Form1</scope><name>Form1</name></member>
+      <member refid="classcolorpick_1_1_form1_1a63a9dfeca769ba731c11a660233a8f11" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>Form1_FormClosed</name></member>
+      <member refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>map</name></member>
+      <member refid="classcolorpick_1_1_form1_1a39ac5be1e3bb6431cc184413761e9e46" prot="private" virt="non-virtual"><scope>colorpick::Form1</scope><name>timerCOM_Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

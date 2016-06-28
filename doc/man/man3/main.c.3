@@ -1,0 +1,84 @@
+.TH "Pickcolor.X/main.c" 3 "Terça, 28 de Junho de 2016" "Version 1.0" "Mini Projeto ISL29125" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pickcolor.X/main.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <xc\&.h>\fP
+.br
+\fC#include 'config\&.h'\fP
+.br
+\fC#include 'eusart\&.h'\fP
+.br
+\fC#include 'isl29125\&.h'\fP
+.br
+
+.SS "Funções"
+
+.in +1c
+.ti -1c
+.RI "void \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+
+.PP
+\fBAutor:\fP
+.RS 4
+Leonardo & Vitor
+.RE
+.PP
+Created on 18 de Junho de 2016, 14:16 
+.PP
+Definido no ficheiro \fBmain\&.c\fP\&.
+.SH "Documentação das funções"
+.PP 
+.SS "void main (void)"
+funcao main, recebe um byte da USART, conforme o byte recebido pode mostrar a cor vermelha, verde, azul ou RGB  
+.PP
+Definido na linha 18 do ficheiro main\&.c\&.
+.PP
+Referências ColorBLUE(), ColorGREEN(), ColorRED(), ConfigUsart(), FALSE, getc_USART(), OpenISL(), StartISL() e TRUE\&.
+.PP
+.nf
+18                 {
+19     char rx;                            //variavel de rececao USART
+20     TRISCbits\&.RC6 = FALSE;              //TX pin output
+21     TRISCbits\&.RC7 = TRUE;               //RX pin Input
+22     TRISCbits\&.RC3 = TRUE;               //SCL pin
+23     TRISCbits\&.RC4 = TRUE;               //SDA pin
+24     ConfigUsart();                      //configurar usart
+25     OpenISL();                          //Abrir comunicacao I2C
+26     StartISL();                         //ligar o sensor ISL
+27     while(TRUE){                        //loop infinito
+28         rx = getc_USART();              //guardar caracter que recebeu da USART
+29         switch(rx){                     //decisao
+30             case 'R':{                  //se for rx == R
+31                 ColorRED();             //chamar funcao cor vermelha
+32                 break;                  //salta fora
+33             }
+34             case 'G':{                  //se for rx == G
+35                 ColorGREEN();           //chamar funcao cor verde
+36                 break;                  //salta fora
+37             }
+38             case 'B':{                  //se for rx == B
+39                 ColorBLUE();            //chamar funcao cor azul
+40                 break;                  //saltar fora
+41             }
+42             case 'A':{                  //se for rx == A
+43                 ColorRED();             //chamar funcao cor vermelha
+44                 ColorGREEN();           //chamar funcao cor verde
+45                 ColorBLUE();            //chamar funcao cor azul
+46                 break;                  //salta fora
+47             }
+48         }
+49     }
+50     return;
+51 }
+.fi
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Mini Projeto ISL29125 a partir do código fonte\&.

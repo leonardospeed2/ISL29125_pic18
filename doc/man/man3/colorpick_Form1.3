@@ -1,0 +1,359 @@
+.TH "colorpick.Form1" 3 "Terça, 28 de Junho de 2016" "Version 1.0" "Mini Projeto ISL29125" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+colorpick.Form1 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Derivada de Form\&.
+.SS "Membros públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBForm1\fP ()"
+.br
+.in -1c
+.SS "Membros privados"
+
+.in +1c
+.ti -1c
+.RI "void \fBatualizarcom\fP ()"
+.br
+.ti -1c
+.RI "void \fBtimerCOM_Tick\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBbtligar_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "long \fBmap\fP (long x)"
+.br
+.ti -1c
+.RI "string \fBconverterhex\fP (Byte[] buff)"
+.br
+.ti -1c
+.RI "void \fBbtred_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBbtgreen_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBbtblue_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBbtrgb_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBForm1_FormClosed\fP (object sender, FormClosedEventArgs e)"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+Definido na linha 14 do ficheiro Form1\&.cs\&.
+.SH "Documentação dos Construtores & Destrutor"
+.PP 
+.SS "colorpick\&.Form1\&.Form1 ()"
+
+.PP
+Definido na linha 16 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+17         {
+18             InitializeComponent();
+19             timerCOM\&.Enabled = true;
+20         }
+.fi
+.SH "Documentação dos métodos"
+.PP 
+.SS "void colorpick\&.Form1\&.atualizarcom ()\fC [private]\fP"
+funcao atualizar as coms, verifica se existe portas com no pc e lista numa combobox 
+.PP
+Definido na linha 25 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+26         {
+27             int i;
+28             bool quantDiferente; //flag para sinalizar que a quantidade de portas mudou
+29 
+30             i = 0;
+31             quantDiferente = false;
+32 
+33             //se a quantidade de portas mudou
+34             if (cbcom\&.Items\&.Count == SerialPort\&.GetPortNames()\&.Length)
+35             {
+36                 foreach (string s in SerialPort\&.GetPortNames())
+37                 {
+38                     if (cbcom\&.Items[i++]\&.Equals(s) == false)
+39                     {
+40                         quantDiferente = true;
+41                     }
+42                 }
+43             }
+44             else
+45             {
+46                 quantDiferente = true;
+47             }
+48 
+49             //Se não foi detectado diferença
+50             if (quantDiferente == false)
+51             {
+52                 return;                     //retorna
+53             }
+54 
+55             //limpa comboBox
+56             cbcom\&.Items\&.Clear();
+57 
+58             //adiciona todas as COM diponíveis na lista
+59             foreach (string s in SerialPort\&.GetPortNames())
+60             {
+61                 cbcom\&.Items\&.Add(s);
+62             }
+63             //seleciona a primeira posição da lista
+64             cbcom\&.SelectedIndex = 0;
+65         }
+.fi
+.SS "void colorpick\&.Form1\&.btblue_Click (object sender, EventArgs e)\fC [private]\fP"
+funcao botao blue, envia para porta com que quer cor azul e recebe 2 bytes, converte e mostra 
+.PP
+Definido na linha 208 do ficheiro Form1\&.cs\&.
+.PP
+Referências colorpick\&.Form1\&.converterhex() e colorpick\&.Form1\&.map()\&.
+.PP
+.nf
+209         {
+210             Byte[] buff = { 0, 0 };        //variavel para ler valores recebidos
+211             long cor;                      //variavel onde vai ter valor final
+212             if (serialPort1\&.IsOpen == true)          //porta está abert
+213             {
+214                 try
+215                 {
+216                     serialPort1\&.Write("B");             //envia o texto presente no textbox Enviar
+217                     serialPort1\&.Read(buff, 0, 2);       //ler dois Bytes 
+218                 }
+219                 catch
+220                 {
+221                     return;
+222                 }
+223                 lbrx2\&.Text = converterhex(buff);    //converter para hexadecimal
+224                 cor = buff[1];                      //por na variavel cor
+225                 cor += (buff[0] << 8);              //por na variavel cor
+226                 cor = map(cor);                     //fazer conversao para 8bits
+227                 lbblue\&.Text = cor\&.ToString();       //escrever a cor
+228                 lbgreen\&.Text = "0";                 //escrever a cor
+229                 lbred\&.Text = "0";                   //escrever a cor
+230                 viewcolor\&.BackColor = Color\&.FromArgb(0,0,Int16\&.Parse(lbblue\&.Text));        //ver cor
+231             }
+232         }
+.fi
+.SS "void colorpick\&.Form1\&.btgreen_Click (object sender, EventArgs e)\fC [private]\fP"
+funcao botao green, envia para porta com que quer cor verde e recebe 2 bytes, converte e mostra 
+.PP
+Definido na linha 177 do ficheiro Form1\&.cs\&.
+.PP
+Referências colorpick\&.Form1\&.converterhex() e colorpick\&.Form1\&.map()\&.
+.PP
+.nf
+178         {
+179             Byte[] buff = { 0, 0 };        //variavel para ler valores recebidos
+180             long cor;                      //variavel onde vai ter valor final
+181             if (serialPort1\&.IsOpen == true)          //porta está abert
+182             {
+183                 try
+184                 {
+185                     serialPort1\&.Write("G");             //envia o texto presente no textbox Enviar
+186                     serialPort1\&.Read(buff, 0, 2);       //ler dois Bytes 
+187                 }
+188                 catch
+189                 {
+190                     return;
+191                 }
+192 
+193                 
+194                 lbrx2\&.Text = converterhex(buff);    //converter para hexadecimal
+195                 cor = buff[1];                      //por na variavel cor
+196                 cor += (buff[0] << 8);              //por na variavel cor
+197                 cor = map(cor);                     //fazer conversao para 8bits
+198                 lbgreen\&.Text = cor\&.ToString();      //escrever a cor
+199                 lbred\&.Text = "0";                   //escrever a cor
+200                 lbblue\&.Text = "0";                  //escrever a cor
+201                 viewcolor\&.BackColor = Color\&.FromArgb(0,Int16\&.Parse(lbgreen\&.Text),0);        //ver cor
+202             }
+203         }
+.fi
+.SS "void colorpick\&.Form1\&.btligar_Click (object sender, EventArgs e)\fC [private]\fP"
+funcao do botao ligar, liga a porta com escolhida da combobox 
+.PP
+Definido na linha 80 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+81         {
+82             if (serialPort1\&.IsOpen == false)        //se a porta com estiver aberta
+83             {
+84                 try
+85                 {
+86                     serialPort1\&.PortName = cbcom\&.Items[cbcom\&.SelectedIndex]\&.ToString(); //buscar com selecionada
+87                     serialPort1\&.Open();     //abrir uma ligacao serial
+88 
+89                 }
+90                 catch
+91                 {
+92                     return;
+93 
+94                 }
+95                 if (serialPort1\&.IsOpen)             //se existir ligacao
+96                 {
+97                     btligar\&.Text = "Desligar";      //botao diz desligar
+98                     cbcom\&.Enabled = false;          //nao podes selecionar coms
+99 
+100                 }
+101             }
+102             else
+103             {
+104 
+105                 try
+106                 {
+107                     serialPort1\&.Close();           //se nao existir ligacao 
+108                     cbcom\&.Enabled = true;          //podes selecionar uma com 
+109                     btligar\&.Text = "Ligar";        //botao diz ligar 
+110                 }
+111                 catch
+112                 {
+113                     return;
+114                 }
+115 
+116             }
+117         }
+.fi
+.SS "void colorpick\&.Form1\&.btred_Click (object sender, EventArgs e)\fC [private]\fP"
+funcao botao red, envia para porta com que quer cor vermelha e recebe 2 bytes, converte e mostra 
+.PP
+Definido na linha 146 do ficheiro Form1\&.cs\&.
+.PP
+Referências colorpick\&.Form1\&.converterhex() e colorpick\&.Form1\&.map()\&.
+.PP
+.nf
+147         {
+148             Byte[] buff = {0,0};        //variavel para ler valores recebidos
+149             long cor;                   //variavel onde vai ter valor final
+150             if (serialPort1\&.IsOpen == true)          //porta está abert
+151             {
+152                 try
+153                 {
+154                     serialPort1\&.Write("R");             //envia o texto presente no textbox Enviar
+155                     serialPort1\&.Read(buff, 0, 2);       //ler dois Bytes 
+156                 }
+157                 catch
+158                 {
+159                     return;
+160                 }
+161                 
+162                 lbrx2\&.Text = converterhex(buff);    //converter para hexadecimal
+163                 cor = buff[1];                      //por na variavel cor
+164                 cor += (buff[0] << 8);              //por na variavel cor
+165                 cor = map(cor);                     //fazer conversao para 8bits
+166                 lbred\&.Text = cor\&.ToString();        //escrever a cor
+167                 lbgreen\&.Text = "0";                 //escrever a cor
+168                 lbblue\&.Text = "0";                  //escrever a cor
+169                 viewcolor\&.BackColor = Color\&.FromArgb(Int16\&.Parse(lbred\&.Text), 0, 0);        //ver cor
+170             }
+171                 
+172         }
+.fi
+.SS "void colorpick\&.Form1\&.btrgb_Click (object sender, EventArgs e)\fC [private]\fP"
+funcao botao rgb, envia para porta com que quer RGB e recebe 6 bytes, converte e mostra 
+.PP
+Definido na linha 237 do ficheiro Form1\&.cs\&.
+.PP
+Referências colorpick\&.Form1\&.converterhex() e colorpick\&.Form1\&.map()\&.
+.PP
+.nf
+238         {
+239             Byte[] buff = { 0, 0,0,0,0,0 };          //variavel para ler valores recebidos
+240             long cor,cor2,cor3;                      //variavel onde vai ter valor final
+241             if (serialPort1\&.IsOpen == true)          //porta está abert
+242             {
+243                 try
+244                 {
+245                     serialPort1\&.Write("A");              //envia o texto presente no textbox Enviar
+246                     serialPort1\&.Read(buff, 0, 6);        //ler seis Bytes 
+247                 }
+248                 catch
+249                 {
+250                     return;
+251                 }
+252                 lbrx2\&.Text = converterhex(buff);     //converter para hexadecimal
+253                 cor = buff[1];                       //por na variavel cor
+254                 cor += (buff[0] << 8);               //por na variavel cor
+255                 cor = map(cor);                      //fazer conversao para 8bits
+256                 cor2 = buff[3];                      //por na variavel cor
+257                 cor2 += (buff[2] << 8);              //por na variavel cor
+258                 cor2 = map(cor2);                    //fazer conversao para 8bits
+259                 cor3 = buff[5];                      //por na variavel cor
+260                 cor3 += (buff[4] << 8);              //por na variavel cor
+261                 cor3 = map(cor3);                    //fazer conversao para 8bits
+262                 lbred\&.Text = cor\&.ToString();         //escrever a cor
+263                 lbgreen\&.Text = cor2\&.ToString();      //escrever a cor
+264                 lbblue\&.Text = cor3\&.ToString();       //escrever a cor
+265                 viewcolor\&.BackColor = Color\&.FromArgb(Int16\&.Parse(lbred\&.Text),Int16\&.Parse(lbgreen\&.Text),Int16\&.Parse(lbblue\&.Text));   //ver cor
+266             }
+267         }
+.fi
+.SS "string colorpick\&.Form1\&.converterhex (Byte[] buff)\fC [private]\fP"
+funcao converter hex, array bytes converte em string hexadecimal 
+.PP
+Definido na linha 130 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+131         {
+132             string hex = "";
+133             foreach (char c in buff)
+134             {
+135                 if (c <= 0x0F)
+136                     hex += "0" + ((int)c)\&.ToString("x") + " ";
+137                 else
+138                     hex += ((int)c)\&.ToString("x") + " ";
+139             }
+140             return hex;
+141         }
+.fi
+.SS "void colorpick\&.Form1\&.Form1_FormClosed (object sender, FormClosedEventArgs e)\fC [private]\fP"
+funcao fromclose, quando fecha a aplicacao ele fecha a porta com aberta 
+.PP
+Definido na linha 272 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+273         {
+274             if (serialPort1\&.IsOpen == true)  // se porta aberta
+275                 serialPort1\&.Close();         //fecha a porta
+276         }
+.fi
+.SS "long colorpick\&.Form1\&.map (long x)\fC [private]\fP"
+funcao map, converte valor 16bits em 8bits 
+.PP
+Definido na linha 122 do ficheiro Form1\&.cs\&.
+.PP
+.nf
+123         {
+124             return x*255/65535;     //converter 16bits para 8 bits
+125         }
+.fi
+.SS "void colorpick\&.Form1\&.timerCOM_Tick (object sender, EventArgs e)\fC [private]\fP"
+funcao timer com, passado 1 segundo chama a funcao atualizarcom 
+.PP
+Definido na linha 71 do ficheiro Form1\&.cs\&.
+.PP
+Referências colorpick\&.Form1\&.atualizarcom()\&.
+.PP
+.nf
+72         {
+73             //chamar a funcao atualizarcom
+74             atualizarcom();
+75         }
+.fi
+
+
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Mini Projeto ISL29125 a partir do código fonte\&.

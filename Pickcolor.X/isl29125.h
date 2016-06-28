@@ -1,11 +1,8 @@
-/* *
- * File:    isl29125   
- * Author:  Leonardo & Vitor
- */
-
-/** 
- * biblioteca de configuracao do sensor ISL29125
- */
+/**
+* \file isl29125.h
+* \author  Leonardo & Vitor
+* biblioteca de configuracao do sensor ISL29125
+*/
 #include <plib/i2c.h>
 
 //ISL29125 Registos
@@ -17,8 +14,8 @@
 #define THRESHOLD_LH 0x05
 #define THRESHOLD_HL 0x06
 #define THRESHOLD_HH 0x07
-#define STATUS 0x08 
-#define GREEN_L 0x09 
+#define STATUS 0x08
+#define GREEN_L 0x09
 #define GREEN_H 0x0A
 #define RED_L 0x0B
 #define RED_H 0x0C
@@ -90,11 +87,11 @@
 #define BRG 49  //i2c comunicacao 100kHz
 
 /**
-* funcao abrir uma comunica��o I2C
+* funcao abrir uma comunicacao I2C
 *\image html OpenISL.png
 */
 void OpenISL(){
-    SSPADD = BRG;                   //100kHz                   
+    SSPADD = BRG;                   //100kHz
     OpenI2C(MASTER, SLEW_OFF);      //PIC como master frequencia baixa 100kHz
     IdleI2C();                      //esperar bus esteja livre
 }
@@ -142,7 +139,6 @@ unsigned char ReadISL(char address){
 
 /**
 * funcao de configurar a config_1 ISL29125
-*\image html ConfigISL1.png
 */
 void ConfigISL1(unsigned char cfg){
     WriteISL(CONFIG_1,cfg);         //configuracao 1
@@ -150,7 +146,6 @@ void ConfigISL1(unsigned char cfg){
 
 /**
 * funcao de configurar a config_2 ISL29125
-*\image html ConfigISL2.png
 */
 void ConfigISL2(unsigned char cfg){
     WriteISL(CONFIG_2,cfg);        //configuracao 2
@@ -158,7 +153,6 @@ void ConfigISL2(unsigned char cfg){
 
 /**
 * funcao de configurar a config_3 ISL29125
-*\image html ConfigISL3.png
 */
 void ConfigISL3(unsigned char cfg){
     WriteISL(CONFIG_3,cfg);        //configuracao 3
@@ -166,7 +160,6 @@ void ConfigISL3(unsigned char cfg){
 
 /**
 * funcao para por a ADC do sensor ligado
-*\image html StartISL.png
 */
 void StartISL(){
     ConfigISL1(CFG1_MODE_STANDBY | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);
@@ -175,7 +168,6 @@ void StartISL(){
 
 /**
 * funcao para por a ADC do sensor desligado
-*\image html StopISL.png
 */
 void StopADCISL(){
     ConfigISL1(CFG1_MODE_POWERDOWN | CFG1_10KLUX | CFG1_16BIT | CFG1_ADC_SYNC_NORMAL);

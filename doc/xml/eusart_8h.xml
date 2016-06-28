@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="eusart_8h" kind="file" language="C++">
+    <compoundname>eusart.h</compoundname>
+    <includes local="yes">plib/usart.h</includes>
+    <includedby refid="main_8c" local="yes">Pickcolor.X/main.c</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>plib/usart.h</label>
+      </node>
+      <node id="5">
+        <label>Pickcolor.X/eusart.h</label>
+        <link refid="eusart.h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>Pickcolor.X/eusart.h</label>
+        <link refid="eusart.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Pickcolor.X/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="eusart_8h_1a62634036639f88eece6fbf226b45f84b" prot="public" static="no">
+        <name>BAUD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pickcolor.X/eusart.h" line="7" column="10" bodyfile="Pickcolor.X/eusart.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="eusart_8h_1a5af8ff416574c6da0f83a6cdd1d37f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigUsart</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigUsart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao de configuracao de uma USART, sem interrupcoes, modo assincrono e baud rate 115200 <image type="html" name="usartconfig.png"></image>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pickcolor.X/eusart.h" line="14" column="1" bodyfile="Pickcolor.X/eusart.h" bodystart="14" bodyend="20"/>
+        <references refid="eusart_8h_1a62634036639f88eece6fbf226b45f84b" compoundref="eusart_8h" startline="7">BAUD</references>
+        <references refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="config_8h" startline="13">FALSE</references>
+      </memberdef>
+      <memberdef kind="function" id="eusart_8h_1adb999cc5c4824fc9de980fcecb0ee827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char getc_USART</definition>
+        <argsstring>()</argsstring>
+        <name>getc_USART</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funcao de ler um caracter da USART <image type="html" name="getc_USART.png"></image>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pickcolor.X/eusart.h" line="26" column="1" bodyfile="Pickcolor.X/eusart.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Leonardo &amp; Vitor biblioteca de configuracao da USART </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&quot;plib/usart.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="eusart_8h_1a62634036639f88eece6fbf226b45f84b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAUD<sp/>10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//115200<sp/>baud<sp/>rate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="eusart_8h_1a5af8ff416574c6da0f83a6cdd1d37f33" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="eusart_8h_1a5af8ff416574c6da0f83a6cdd1d37f33" kindref="member">ConfigUsart</ref>(){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>PIR1bits.RCIF<sp/>=<sp/><ref refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bandeira<sp/>rececao<sp/>falsa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>IPR1bits.RCIP<sp/>=<sp/><ref refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//prioridade<sp/>alta<sp/>falsa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>PIE1bits.RCIE<sp/>=<sp/><ref refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//interrupcao<sp/>na<sp/>rececao<sp/>falsa</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>INTCONbits.PEIE<sp/>=<sp/><ref refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//interrupcao<sp/>global<sp/>desativada</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>OpenUSART(USART_TX_INT_OFF<sp/>&amp;<sp/>USART_RX_INT_OFF<sp/>&amp;<sp/>USART_ASYNCH_MODE<sp/>&amp;<sp/>USART_EIGHT_BIT<sp/>&amp;<sp/>USART_BRGH_HIGH,<ref refid="eusart_8h_1a62634036639f88eece6fbf226b45f84b" kindref="member">BAUD</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="eusart_8h_1adb999cc5c4824fc9de980fcecb0ee827" refkind="member"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="eusart_8h_1adb999cc5c4824fc9de980fcecb0ee827" kindref="member">getc_USART</ref>(){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!PIR1bits.RCIF);<sp/><sp/></highlight><highlight class="comment">//esperar<sp/>que<sp/>chegue<sp/>um<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getcUSART();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//retorno<sp/>do<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Pickcolor.X/eusart.h"/>
+  </compounddef>
+</doxygen>

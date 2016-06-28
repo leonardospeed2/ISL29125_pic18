@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal"><sp/>@mainpage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>@authors<sp/>Leonardo<sp/>&amp;<sp/>Vitor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>@section<sp/>notes<sp/>Notas</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Documentacao<sp/>do<sp/>MiniProjeto<sp/>ISL29125.&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Pasta<sp/>doc<sp/>index.html</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>@section<sp/>requirements<sp/>Requisitos</highlight></codeline>
+<codeline><highlight class="normal"><sp/>IDE<sp/>Mplab<sp/>X&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Visual<sp/>Studio&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Compilador<sp/>xc8&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Pic18F4580&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Sensor<sp/>RGB<sp/>ISL<sp/>29125</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Tres<sp/>resistencias<sp/>4K7&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Resistencia<sp/>10K&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Condensador<sp/>0,1uF&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Dois<sp/>condensadores<sp/>20pF&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Cristal<sp/>20MHz&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Botao&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>TTL<sp/>PL2303&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;h2&gt;Esquema&lt;/h2&gt;</highlight></codeline>
+<codeline><highlight class="normal">\image<sp/>html<sp/>esquema.png</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;hr&gt;<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>pasta<sp/>colorpick<sp/>e<sp/>o<sp/>projeto<sp/>em<sp/>visual<sp/>studio&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>pasta<sp/>Pickcolor.X<sp/>e<sp/>o<sp/>projeto<sp/>para<sp/>mplab</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

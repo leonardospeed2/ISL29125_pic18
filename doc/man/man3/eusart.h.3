@@ -1,0 +1,78 @@
+.TH "Pickcolor.X/eusart.h" 3 "Terça, 28 de Junho de 2016" "Version 1.0" "Mini Projeto ISL29125" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pickcolor.X/eusart.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'plib/usart\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBAUD\fP   10"
+.br
+.in -1c
+.SS "Funções"
+
+.in +1c
+.ti -1c
+.RI "void \fBConfigUsart\fP ()"
+.br
+.ti -1c
+.RI "char \fBgetc_USART\fP ()"
+.br
+.in -1c
+.SH "Descrição detalhada"
+.PP 
+
+.PP
+\fBAutor:\fP
+.RS 4
+Leonardo & Vitor biblioteca de configuracao da USART 
+.RE
+.PP
+
+.PP
+Definido no ficheiro \fBeusart\&.h\fP\&.
+.SH "Documentação das macros"
+.PP 
+.SS "#define BAUD   10"
+
+.PP
+Definido na linha 7 do ficheiro eusart\&.h\&.
+.SH "Documentação das funções"
+.PP 
+.SS "void ConfigUsart ()"
+funcao de configuracao de uma USART, sem interrupcoes, modo assincrono e baud rate 115200  
+.PP
+Definido na linha 14 do ficheiro eusart\&.h\&.
+.PP
+Referências BAUD e FALSE\&.
+.PP
+.nf
+14                   {
+15     PIR1bits\&.RCIF = FALSE;      //bandeira rececao falsa
+16     IPR1bits\&.RCIP = FALSE;      //prioridade alta falsa
+17     PIE1bits\&.RCIE = FALSE;      //interrupcao na rececao falsa
+18     INTCONbits\&.PEIE = FALSE;    //interrupcao global desativada
+19     OpenUSART(USART_TX_INT_OFF & USART_RX_INT_OFF & USART_ASYNCH_MODE & USART_EIGHT_BIT & USART_BRGH_HIGH,BAUD);
+20 }
+.fi
+.SS "char getc_USART ()"
+funcao de ler um caracter da USART  
+.PP
+Definido na linha 26 do ficheiro eusart\&.h\&.
+.PP
+.nf
+26                  {
+27     while(!PIR1bits\&.RCIF);  //esperar que chegue um byte
+28     return getcUSART();     //retorno do byte
+29 }
+.fi
+.SH "Autor"
+.PP 
+Gerado automaticamente por Doxygen para Mini Projeto ISL29125 a partir do código fonte\&.

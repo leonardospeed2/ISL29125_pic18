@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classcolorpick_1_1_form1" kind="class"><name>colorpick::Form1</name>
+    <member refid="classcolorpick_1_1_form1_1aaf2c710a9365b89a8dd6cccf4a364c9e" kind="function"><name>Form1</name></member>
+    <member refid="classcolorpick_1_1_form1_1aedc191b1bcfb3e1a7a2cab95ceca9c90" kind="function"><name>atualizarcom</name></member>
+    <member refid="classcolorpick_1_1_form1_1a39ac5be1e3bb6431cc184413761e9e46" kind="function"><name>timerCOM_Tick</name></member>
+    <member refid="classcolorpick_1_1_form1_1ae7cb3197a82fa9416cd56006dc12c5be" kind="function"><name>btligar_Click</name></member>
+    <member refid="classcolorpick_1_1_form1_1acfba3a96cd6795d0eecffb7f36f984fa" kind="function"><name>map</name></member>
+    <member refid="classcolorpick_1_1_form1_1ab94319dbe7067c3ff44b6cf583d5657f" kind="function"><name>converterhex</name></member>
+    <member refid="classcolorpick_1_1_form1_1a5af9c6089df459668dbe6185c90f1541" kind="function"><name>btred_Click</name></member>
+    <member refid="classcolorpick_1_1_form1_1af9d782feaec370cbffd3054078f68266" kind="function"><name>btgreen_Click</name></member>
+    <member refid="classcolorpick_1_1_form1_1a79e5401015896f629f1415696e645b84" kind="function"><name>btblue_Click</name></member>
+    <member refid="classcolorpick_1_1_form1_1a044280d621f79660d80b7e4b47b9d8d6" kind="function"><name>btrgb_Click</name></member>
+    <member refid="classcolorpick_1_1_form1_1a63a9dfeca769ba731c11a660233a8f11" kind="function"><name>Form1_FormClosed</name></member>
+  </compound>
+  <compound refid="namespacecolorpick" kind="namespace"><name>colorpick</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o_1_1_ports" kind="namespace"><name>System::IO::Ports</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_1a024148e99a7143db044a48216664d03d" kind="define"><name>_XTAL_FREQ</name></member>
+    <member refid="config_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+  </compound>
+  <compound refid="eusart_8h" kind="file"><name>eusart.h</name>
+    <member refid="eusart_8h_1a62634036639f88eece6fbf226b45f84b" kind="define"><name>BAUD</name></member>
+    <member refid="eusart_8h_1a5af8ff416574c6da0f83a6cdd1d37f33" kind="function"><name>ConfigUsart</name></member>
+    <member refid="eusart_8h_1adb999cc5c4824fc9de980fcecb0ee827" kind="function"><name>getc_USART</name></member>
+  </compound>
+  <compound refid="isl29125_8h" kind="file"><name>isl29125.h</name>
+    <member refid="isl29125_8h_1a0b85963cace75e76ae726bcffb04eb70" kind="define"><name>DEVICE_ID</name></member>
+    <member refid="isl29125_8h_1ac86d600d868707b6d38ce6d5e387bceb" kind="define"><name>CONFIG_1</name></member>
+    <member refid="isl29125_8h_1a25b7b9db4036cdb935397879115262f3" kind="define"><name>CONFIG_2</name></member>
+    <member refid="isl29125_8h_1a5cb15ca40c732e36a770119aee0453cd" kind="define"><name>CONFIG_3</name></member>
+    <member refid="isl29125_8h_1aac49f2ee462745e42440279fa5c11d86" kind="define"><name>THRESHOLD_LL</name></member>
+    <member refid="isl29125_8h_1af8b738ca52419d38e7dfab62472b6f20" kind="define"><name>THRESHOLD_LH</name></member>
+    <member refid="isl29125_8h_1a328baba4b92587915d11c5ebe1fbdfb4" kind="define"><name>THRESHOLD_HL</name></member>
+    <member refid="isl29125_8h_1a72723d9921b7bcd856c66b045fbea10c" kind="define"><name>THRESHOLD_HH</name></member>
+    <member refid="isl29125_8h_1a59279bee44f34d08b3cbf3a89fb0d8d9" kind="define"><name>STATUS</name></member>
+    <member refid="isl29125_8h_1a5bfce25bfbea539b7b95dc509d40f30f" kind="define"><name>GREEN_L</name></member>
+    <member refid="isl29125_8h_1a5cb8f1ee6cca5bbd3c98391c016b684d" kind="define"><name>GREEN_H</name></member>
+    <member refid="isl29125_8h_1acb0394ea61e004b3a2135b0085995dae" kind="define"><name>RED_L</name></member>
+    <member refid="isl29125_8h_1adb3fddc3b3a0a05a846c874270d68d9c" kind="define"><name>RED_H</name></member>
+    <member refid="isl29125_8h_1a93edcec744de2914abd2b4fed5207936" kind="define"><name>BLUE_L</name></member>
+    <member refid="isl29125_8h_1a755ccb988a6fe3ff950d337faea78e15" kind="define"><name>BLUE_H</name></member>
+    <member refid="isl29125_8h_1a5a6a803c80e3b7acbb4deb27f597d087" kind="define"><name>CFG1_MODE_POWERDOWN</name></member>
+    <member refid="isl29125_8h_1a68a0d41f41539465ab90ac9cc7377b84" kind="define"><name>CFG1_MODE_G</name></member>
+    <member refid="isl29125_8h_1adcc087c102fd0401ae191cb9a4ca91e4" kind="define"><name>CFG1_MODE_R</name></member>
+    <member refid="isl29125_8h_1ae5f6f02c190181f014683aad423d3b9b" kind="define"><name>CFG1_MODE_B</name></member>
+    <member refid="isl29125_8h_1a2910a70b7af2051e6a84b3f784468be2" kind="define"><name>CFG1_MODE_STANDBY</name></member>
+    <member refid="isl29125_8h_1a3f9d2d7f2d6f722850a45973960a4f77" kind="define"><name>CFG1_MODE_RGB</name></member>
+    <member refid="isl29125_8h_1a96d118eeb5dcece3db943622c7154963" kind="define"><name>CFG1_MODE_RG</name></member>
+    <member refid="isl29125_8h_1ae9e5ff33251b3bfffa6cce6920231234" kind="define"><name>CFG1_MODE_GB</name></member>
+    <member refid="isl29125_8h_1ade6de8174a9aae51fde1b0cde6a3d014" kind="define"><name>CFG1_375LUX</name></member>
+    <member refid="isl29125_8h_1a4c7116f3026c744222ad0bfbd13a142a" kind="define"><name>CFG1_10KLUX</name></member>
+    <member refid="isl29125_8h_1a20d7d2361a35aecbffee024af7139ffd" kind="define"><name>CFG1_16BIT</name></member>
+    <member refid="isl29125_8h_1ab0e5588cf89fdf1f269272b2708547cb" kind="define"><name>CFG1_12BIT</name></member>
+    <member refid="isl29125_8h_1a1714e894eba18c1ecef2ab2cee10c8c9" kind="define"><name>CFG1_ADC_SYNC_NORMAL</name></member>
+    <member refid="isl29125_8h_1af8a26875148fc42cb5cc351bc1f97496" kind="define"><name>CFG1_ADC_SYNC_TO_INT</name></member>
+    <member refid="isl29125_8h_1a8482318d2616791e9eb18bba8fd082a0" kind="define"><name>CFG2_IR_OFFSET_OFF</name></member>
+    <member refid="isl29125_8h_1aa0c59c472111b7931d705f98b5fed53d" kind="define"><name>CFG2_IR_OFFSET_ON</name></member>
+    <member refid="isl29125_8h_1a99a3af005857a97d04c8c6300132bf93" kind="define"><name>CFG2_IR_ADJUST_LOW</name></member>
+    <member refid="isl29125_8h_1a5c77c68afb72e25085c9d4b61dae0df6" kind="define"><name>CFG2_IR_ADJUST_MID</name></member>
+    <member refid="isl29125_8h_1a0c5822565077f2624efb6c3cd610002f" kind="define"><name>CFG2_IR_ADJUST_HIGH</name></member>
+    <member refid="isl29125_8h_1a26cf9263c99750f747e04070fbca2656" kind="define"><name>CFG3_NO_INT</name></member>
+    <member refid="isl29125_8h_1a25b878a79b54caecd2323feadff6e88a" kind="define"><name>CFG3_G_INT</name></member>
+    <member refid="isl29125_8h_1a483f72fc05338153cb5f4745dee17acd" kind="define"><name>CFG3_R_INT</name></member>
+    <member refid="isl29125_8h_1a237bce9c9082a05af0c63f8771f084ed" kind="define"><name>CFG3_B_INT</name></member>
+    <member refid="isl29125_8h_1a23e332ae961b59d4f2513565dd355593" kind="define"><name>CFG3_INT_PRST1</name></member>
+    <member refid="isl29125_8h_1a214f6f3c3adb04072cad01355f082d2d" kind="define"><name>CFG3_INT_PRST2</name></member>
+    <member refid="isl29125_8h_1a03b4f9f329e9afa15faa98e97bf5148a" kind="define"><name>CFG3_INT_PRST4</name></member>
+    <member refid="isl29125_8h_1a2761c00442127be851f58feeb0e18be8" kind="define"><name>CFG3_INT_PRST8</name></member>
+    <member refid="isl29125_8h_1a46820c5073f501399390151abb9efd2e" kind="define"><name>CFG3_RGB_CONV_TO_INT_DISABLE</name></member>
+    <member refid="isl29125_8h_1a838b46eac84babcdabaf8e92e069e9f2" kind="define"><name>CFG3_RGB_CONV_TO_INT_ENABLE</name></member>
+    <member refid="isl29125_8h_1acecd2ec5a15543d481b94c1de3752a59" kind="define"><name>FLAG_INT</name></member>
+    <member refid="isl29125_8h_1add1dd30a9b48b626ee6786726405cd5a" kind="define"><name>FLAG_CONV_DONE</name></member>
+    <member refid="isl29125_8h_1af78d48b6aee517eb4e8940e8efcbef21" kind="define"><name>FLAG_BROWNOUT</name></member>
+    <member refid="isl29125_8h_1af1d9163a119590660e94a984b400c19a" kind="define"><name>FLAG_CONV_G</name></member>
+    <member refid="isl29125_8h_1a2b38f1a65b731204918dea783539ae19" kind="define"><name>FLAG_CONV_R</name></member>
+    <member refid="isl29125_8h_1aea56f07b6a923b70e9e760130a8ce837" kind="define"><name>FLAG_CONV_B</name></member>
+    <member refid="isl29125_8h_1a2b22e61d62d7434403e07658eaaddd70" kind="define"><name>CFG_DEFAUT</name></member>
+    <member refid="isl29125_8h_1a9f1f7ad8acbdd2ff863ed8d6d00685a2" kind="define"><name>READISL</name></member>
+    <member refid="isl29125_8h_1afe2123aa65611306b94e4bb93c618f8d" kind="define"><name>WRITEISL</name></member>
+    <member refid="isl29125_8h_1a7469d8cd84e6e02bc55c6f076db607ba" kind="define"><name>BRG</name></member>
+    <member refid="isl29125_8h_1a59cd7bbab9d2292b55bd57b4d6d1df52" kind="function"><name>OpenISL</name></member>
+    <member refid="isl29125_8h_1aa7ba6b3110b52b38d8a06f6dd588a5f1" kind="function"><name>WriteISL</name></member>
+    <member refid="isl29125_8h_1ae96d141215f7abea25c0146209acaa75" kind="function"><name>ReadISL</name></member>
+    <member refid="isl29125_8h_1ad4a9870f065d592acbfafbb9fe595fdb" kind="function"><name>ConfigISL1</name></member>
+    <member refid="isl29125_8h_1a30ec5cb2e772e48b1b906d76b95581d0" kind="function"><name>ConfigISL2</name></member>
+    <member refid="isl29125_8h_1a8b051d97a8baddbe812763820ef56ed6" kind="function"><name>ConfigISL3</name></member>
+    <member refid="isl29125_8h_1a2c727cb620200b942397d3acf67b9979" kind="function"><name>StartISL</name></member>
+    <member refid="isl29125_8h_1a00603dd5f366d5454b05130805a8b55e" kind="function"><name>StopADCISL</name></member>
+    <member refid="isl29125_8h_1ae92b5898a902f3c6ffd468a897ba6010" kind="function"><name>StatusISL</name></member>
+    <member refid="isl29125_8h_1a8307ab6b6afc228a866648eb0db8c39f" kind="function"><name>ColorRED</name></member>
+    <member refid="isl29125_8h_1a8a0c57530a0bcac6f1af21e22e7d6b81" kind="function"><name>ColorGREEN</name></member>
+    <member refid="isl29125_8h_1aec2d7c71ded70a23c7c718bd6de59dae" kind="function"><name>ColorBLUE</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1a6288eba0f8e8ad3ab1544ad731eb7667" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_82501b4c47ae862ce788d689ae5c1a2d" kind="dir"><name>colorpick/colorpick</name>
+  </compound>
+  <compound refid="dir_5fbf6fa51e14f5e873484aba091e8036" kind="dir"><name>colorpick</name>
+  </compound>
+  <compound refid="dir_15b2c2aa7b19b25afaed54fe5b74b471" kind="dir"><name>Pickcolor.X</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

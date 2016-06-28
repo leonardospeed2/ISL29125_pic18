@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_15b2c2aa7b19b25afaed54fe5b74b471" kind="dir">
+    <compoundname>Pickcolor.X</compoundname>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="eusart_8h">eusart.h</innerfile>
+    <innerfile refid="isl29125_8h">isl29125.h</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Pickcolor.X/"/>
+  </compounddef>
+</doxygen>

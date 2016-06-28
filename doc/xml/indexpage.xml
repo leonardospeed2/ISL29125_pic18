@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Mini Projeto ISL29125</title>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Leonardo &amp; Vitor</para></simplesect>
+<hruler/>
+</para><sect1 id="index_1notes">
+<title>Notas</title>
+<para>Documentacao do MiniProjeto ISL29125.<linebreak/>
+ Pasta doc index.html <hruler/>
+ </para></sect1>
+<sect1 id="index_1requirements">
+<title>Requisitos</title>
+<para>IDE Mplab X<linebreak/>
+ Visual Studio<linebreak/>
+ Compilador xc8<linebreak/>
+ Pic18F4580<linebreak/>
+ Sensor RGB ISL 29125 Tres resistencias 4K7<linebreak/>
+ Resistencia 10K<linebreak/>
+ Condensador 0,1uF<linebreak/>
+ Dois condensadores 20pF<linebreak/>
+ Cristal 20MHz<linebreak/>
+ Botao<linebreak/>
+ TTL PL2303<linebreak/>
+ <hruler/>
+ <heading level="2">Esquema</heading>
+</para><para><image type="html" name="esquema.png"></image>
+ <hruler/>
+ pasta colorpick e o projeto em visual studio<linebreak/>
+ pasta Pickcolor.X e o projeto para mplab <hruler/>
+ </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
